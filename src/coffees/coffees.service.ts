@@ -22,7 +22,6 @@ export class CoffeesService {
         // throw 'A random Error';
         const coffee = this.coffees.find(item => item.id === +id)
         if (!coffee) {
-            
             throw new NotFoundException(`Coffee #${id} not found`);
         }
         return coffee;
@@ -37,7 +36,7 @@ export class CoffeesService {
         const existingCoffee = this.findOne(id);
         if (existingCoffee) {
             // update the exisitng entity
-            return `You have updated with ${JSON.stringify(updateCoffeeDto)}`
+            return `You have updatedd with ${JSON.stringify(updateCoffeeDto)}`
         }
     }
 
